@@ -378,7 +378,7 @@ function App() {
     const[done, setDone] = useState(undefined);
 
     useEffect(() => {
-      Axios.get(url+`player/${loc}`).then((response)=>{
+      Axios.get(url+`/player/${loc}`).then((response)=>{
       setPlayerBio(response.data)
       setDone(true)
       })
