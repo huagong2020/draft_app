@@ -1,38 +1,211 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  padding-top: 20px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #236192;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+  float: left;
 }
+
+li a {
+  display: block;
+  color: #9EA2A2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #0C2340;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  display: block;
+}
+
+body {
+  font-family: 'open sans', sans-serif;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+thead button {
+  border: 0;
+  border-radius: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  padding: 0.5em;
+  margin-bottom: 1px;
+}
+
+thead button.ascending::after {
+  content: '▲';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+thead button.descending::after {
+  content: '▼';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+tbody td {
+  padding: 0.5em;
+  border-bottom: 1px solid #ccc;
+}
+
+tbody tr:hover {
+  background-color: #eee;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.column1 {
+  float: left;
+  width: 33%;
+  margin: auto;
+  text-align: right;
+  height: 50px;
+}
+
+.column1 img {
+  height: 270%;
+}
+
+.column2 {
+  float: left;
+  width: 34%;
+  vertical-align: center;
+  margin: auto;
+  text-align: center;
+}
+
+.column3 {
+  float: left;
+  text-align: left;
+  width: 33%;
+  vertical-align: center;
+  margin: auto;
+}
+
+.col1 {
+  float: left;
+  width: 16%;
+}
+
+.col2 {
+  float: left;
+  width: 17%;
+}
+.col3 {
+  float: left;
+  width: 17%;
+}
+.col4 {
+  float: left;
+  width: 17%;
+}
+.col5 {
+  float: left;
+  width: 17%;
+}
+.col6 {
+  float: left;
+  width: 16%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  height: 55%;
+}
+
+
+.Collapsible {
+  background-color: white; }
+
+.Collapsible__contentInner {
+  padding: 10px;
+  border: 1px solid #ebebeb;
+  border-top: 0; }
+  .Collapsible__contentInner p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px; }
+    .Collapsible__contentInner p:last-child {
+      margin-bottom: 0; }
+
+.Collapsible__trigger {
+  display: block;
+  font-weight: 400;
+  text-decoration: none;
+  color: #333333;
+  position: relative;
+  border: 1px solid white;
+  padding: 10px;
+  background: #78BE20;
+  color: white; }
+  .Collapsible__trigger:after {
+    font-family: 'FontAwesome';
+    content: '◄';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms; }
+  .Collapsible__trigger.is-open:after {
+    transform: rotateZ(-90deg); }
+  .Collapsible__trigger.is-disabled {
+    opacity: 0.5;
+    background-color: grey; }
+
+.CustomTriggerCSS {
+  background-color: lightcoral;
+  transition: background-color 200ms ease; }
+
+.CustomTriggerCSS--open {
+  background-color: darkslateblue; }
+
+.Collapsible__custom-sibling {
+  padding: 5px;
+  font-size: 12px;
+  background-color: #CBB700;
+  color: black; }
