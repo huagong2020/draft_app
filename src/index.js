@@ -2,12 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Amplify, { API } from 'aws-amplify';
-import awsconfig from './aws-exports';
-
-// Amplify init
-Amplify.configure(awsconfig);
-API.configure(awsconfig);
 
 ReactDOM.render(
   <React.StrictMode>
