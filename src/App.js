@@ -5,7 +5,8 @@ import React, { useState, useEffect } from 'react';
 import ReactLoading from "react-loading";
 import ScatterPlot from './ScatterPlot.js';
 import Collapsible from 'react-collapsible';
-var url ="https://cors-everywhere.herokuapp.com/http://ec2-52-26-194-76.us-west-2.compute.amazonaws.com:8080"
+var url ="http://ec2-52-26-194-76.us-west-2.compute.amazonaws.com:8080"
+// var url ="https://cors-everywhere.herokuapp.com/http://ec2-52-26-194-76.us-west-2.compute.amazonaws.com:8080"
 // var url = "http://localhost:3001"
 
 function App() {
